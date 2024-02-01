@@ -22,7 +22,6 @@ def draw_bounding_box(classId, conf, left, top, right, bottom, frame, classes):
         frame_count+=1
 
 
-# Remove the bounding boxes with low confidence using non-maxima suppression
 def postprocess(frame, outs, conf_threshold, nms_threshold, classes):
     frameHeight = frame.shape[0]
     frame_width = frame.shape[1]
