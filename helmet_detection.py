@@ -32,8 +32,8 @@ layersNames = net.getLayerNames()
 output_layer = [layersNames[i - 1] for i in net.getUnconnectedOutLayers()]
 
 # # cap = VideoCapture(0)
-cap = cv.VideoCapture("test.mp4")
-# cap=cv.VideoCapture(0)
+# cap = cv.VideoCapture("test.mp4")
+cap=cv.VideoCapture(0)
 # # for fn in glob('images/*.jpg'):
 frame_count = 0
 while True:
